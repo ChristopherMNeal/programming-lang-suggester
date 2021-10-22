@@ -1,27 +1,27 @@
-//business logic
-let ruby = 0;
-let csharp = 0;
-let js = 0;
+// //business logic
+// let ruby = 0;
+// let csharp = 0;
+// let js = 0;
 
-function tallyResults(selection) {
-  if (selection === ruby) {
-    ruby += 1;
-  } else if (selection === csharp) {
-    csharp += 1;
-  } else if (selection === js) {
-    js += 1;
-  }
-}
+// function tallyResults(selection) {
+//   if (selection === ruby) {
+//     ruby += 1;
+//   } else if (selection === csharp) {
+//     csharp += 1;
+//   } else if (selection === js) {
+//     js += 1;
+//   }
+// }
 
-function winner(a, b, c) {
-  if (a > b && a > c) {
-    return a;
-  } else if (b > a && b > c) {
-    return b;
-  } else {
-    return c;
-  } //add function to determine tiebreaker by coin toss?
-}
+// function winner(a, b, c) {
+//   if (a > b && a > c) {
+//     return a;
+//   } else if (b > a && b > c) {
+//     return b;
+//   } else {
+//     return c;
+//   } //add function to determine tiebreaker by coin toss?
+// }
 
 //user interface logic
 // function setClass(winnerLang) {
@@ -39,22 +39,24 @@ function winner(a, b, c) {
 // }
 
 $(document).ready(function() {
-  $("#quiz").submit(function(event) {
+  $("form#quiz").submit(function(event) {
     event.preventDefault();
     
-    const name = $("input#name").val();
-    tallyResults($("input:radio[name=hobby]:checked").val());
-    tallyResults($("input:radio[name=tv]:checked").val());
-    tallyResults($("input:radio[name=exercise]:checked").val());
-    tallyResults($("input:radio[name=app1]:checked").val());
-    tallyResults($("input:radio[name=app2]:checked").val());
-    tallyResults($("input:radio[name=app3]:checked").val());
+    const name = $("#name").val();
+    // tallyResults($("input:radio[name=hobby]:checked").val());
+    // tallyResults($("input:radio[name=tv]:checked").val());
+    // tallyResults($("input:radio[name=exercise]:checked").val());
+    // tallyResults($("input:radio[name=app1]:checked").val());
+    // tallyResults($("input:radio[name=app2]:checked").val());
+    // tallyResults($("input:radio[name=app3]:checked").val());
 
     $("#name-output").text(name);
-    const lang = winner(ruby, csharp, js);
-    $("#lang-output").text(lang);
+    // const lang = winner(ruby, csharp, js);
+    // $("#lang-output").text(lang);
     // setClass(lang);
-    $("#result").delay(400).slideDown(1200);
+    $("#result").show();
+    
+    //delay(400).slideDown(1200);
 
     //Add % of each function?
     
