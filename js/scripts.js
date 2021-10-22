@@ -24,9 +24,23 @@ function winner(a, b, c) {
 }
 
 //user interface logic
+// function setClass(winnerLang) {
+//   $("body").removeClass();
+//   if (winnerLang === ruby) {
+//     $("#result-output").append("<img src='ruby.jpeg'>");
+//     $("body").addClass("ruby");
+//   } else if (winnerLang === csharp) {
+//     $("#result-output").append("<img src='csharp.jpeg'>");
+//     $("body").addClass("csharp");
+//   } else {
+//     $("#result-output").append("<img src='js.jpg'>");
+//     $("body").addClass("js");
+//   }
+// }
+
 $(document).ready(function() {
   $("#quiz").submit(function(event) {
-    event.preventDefault;
+    event.preventDefault();
     
     const name = $("input#name").val();
     tallyResults($("input:radio[name=hobby]:checked").val());
@@ -36,19 +50,10 @@ $(document).ready(function() {
     tallyResults($("input:radio[name=app2]:checked").val());
     tallyResults($("input:radio[name=app3]:checked").val());
 
-    const lang = ////winner function returns lang
     $("#name-output").text(name);
+    const lang = winner(ruby, csharp, js);
     $("#lang-output").text(lang);
-    if (lang === ruby) {
-      $("#result-output").append("<img src='ruby.jpeg'>");
-      $("body")addClass("ruby");
-    } else if (lang === csharp) {
-      $("#result-output").append("<img src='csharp.jpeg'>");
-      $("body").addClass("csharp");
-    } else {
-      $("#result-output").append("<img src='js.jpg'>");
-      $("body").addClass("js");
-    }
+    // setClass(lang);
     $("#result").delay(400).slideDown(1200);
 
     //Add % of each function?
