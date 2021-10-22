@@ -23,6 +23,9 @@ $(document).ready(function() {
     tallyResults($("input:radio[name=app1]:checked").val());
     tallyResults($("input:radio[name=app2]:checked").val());
     tallyResults($("input:radio[name=app3]:checked").val());
+
+    $("result").show();
+    $("result-output").append("")
   });
 });
 
