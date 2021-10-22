@@ -3,11 +3,13 @@ let ruby = 0;
 let csharp = 0;
 let js = 0;
 
-function tallyResults(a) {
-  if (a === ruby) {
+function tallyResults(selection) {
+  if (selection === ruby) {
     ruby += 1;
-  } else if (a === csharp) {
+  } else if (selection === csharp) {
     csharp += 1;
+  } else if (selection === js) {
+    js += 1;
   }
 }
 
@@ -24,8 +26,23 @@ $(document).ready(function() {
     tallyResults($("input:radio[name=app2]:checked").val());
     tallyResults($("input:radio[name=app3]:checked").val());
 
-    $("result").show();
-    $("result-output").append("")
+    const lang = ////winner function returns lang
+    $("#name-output").text(name);
+    $("#lang-output").text(lang);
+    if (lang === ruby) {
+      $("#result-output").append("<img src='ruby.jpeg'>");
+      $("body")addClass("ruby");
+    } else if (lang === csharp) {
+      $("#result-output").append("<img src='csharp.jpeg'>");
+      $("body").addClass("csharp");
+    } else {
+      $("#result-output").append("<img src='js.jpg'>");
+      $("body").addClass("js");
+    }
+    $("#result").delay(400).slideDown(1200);
+
+    //Add % of each function?
+    
   });
 });
 

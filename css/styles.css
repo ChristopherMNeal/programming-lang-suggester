@@ -18,10 +18,24 @@ button {
   padding: 1em;
 }
 
-.xresults {
+#results {
   display: none;
 }
 
 #name-form {
   padding-right: 70%;
+}
+
+.ruby {
+  background-color: #cc0000;
+}
+
+.csharp {
+  background-color: #4A2882;
+  color: #B0F9D8;
+}
+
+.js {
+  background-color: #f0DB4F;
+  color: #323330
 }
