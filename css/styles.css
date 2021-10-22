@@ -13,6 +13,18 @@ button {
   margin-left: 15px;
 }
 
+img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  padding-top: 1.3%;
+  padding-bottom: 1%;
+}
+
 .subheading {
   font-style: italic;
   padding: 1em;
@@ -20,15 +32,19 @@ button {
 
 .heading {
   padding: 1em;
-
 }
 
-#results, .hidden-pic {
-  display: none;
+.cool { 
+  font-style: italic;
+  font-weight: bold;
 }
 
 #name-form {
   padding-right: 70%;
+}
+
+#results, .hidden-pic {
+  display: none;
 }
 
 .ruby {
@@ -47,21 +63,4 @@ button {
   background-color: #f0DB4F;
   color: #323330;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-img {
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h3 {
-  padding-top: 1.3%;
-  padding-bottom: 1%;
-}
-
-.cool { 
-  font-style: italic;
-  font-weight: bold;
 }

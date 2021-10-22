@@ -27,6 +27,13 @@ _This page demonstrates a knowledge by the author of technologies used._
 
 _None_
 
+## Future Updates
+
+* _Fix Javascript to work without declaring global variables._
+* _Add page reset button._
+* _Improve CSS styling to be more accessable and aestheticly pleasing._
+* _Add more language options._
+
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_

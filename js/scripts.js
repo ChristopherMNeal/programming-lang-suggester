@@ -80,7 +80,7 @@ $(document).ready(function() {
     $("#rubypercent").text(getPercent(ruby));
     $("#csharppercent").text(getPercent(csharp));
     $("#jspercent").text(getPercent(js));
-    
+
     ruby = 0;
     csharp = 0;
     js = 0;
