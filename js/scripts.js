@@ -37,7 +37,7 @@ function coinToss(a, b) {
   }
 
 function getPercent(result) {
-  return (result / 6) * 100;
+  return ((result / 7) * 100).toFixed(2);
 }
 
 function setClass(winnerLang) {
@@ -77,9 +77,9 @@ $(document).ready(function() {
     $("#results").delay(100).slideDown(600);
     $("#quiz").trigger("reset");
 
-    $("#rubypercent").text(getPercent(ruby).toFixed(2));
-    $("#csharppercent").text(getPercent(csharp).toFixed(2));
-    $("#jspercent").text(getPercent(js).toFixed(2));
+    $("#rubypercent").text(getPercent(ruby));
+    $("#csharppercent").text(getPercent(csharp));
+    $("#jspercent").text(getPercent(js));
     
     ruby = 0;
     csharp = 0;
