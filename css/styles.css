@@ -40,3 +40,10 @@ button {
   background-color: #f0DB4F;
   color: #323330
 }
+
+img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}

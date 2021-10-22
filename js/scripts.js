@@ -23,21 +23,21 @@ function tallyResults(selection) {
   }
 
 function setClass(winnerLang) {
-  $("body").removeClass();
-  $(".jumbotron").removeClass("ruby csharp js");
-  $(".card").removeClass("ruby csharp js");
+  $("body, .jumbotron, .card").removeClass("ruby csharp js");
+  //$(".jumbotron").removeClass("ruby csharp js");
+  //$(".card").removeClass("ruby csharp js");
   if (winnerLang === "Ruby") {
-    $("#result-output").append("<img src='ruby.jpeg'>");
+    $("#results-output").append("<img src='img/ruby.jpeg'>");
     $("body").addClass("ruby");
     $(".jumbotron").addClass("ruby");
     $(".card").addClass("ruby");
   } else if (winnerLang === "C#") {
-    $("#result-output").append("<img src='csharp.jpeg'>");
+    $("#results-output").append("<img src='img/csharp.jpeg'>");
     $("body").addClass("csharp");
     $(".jumbotron").addClass("csharp");
     $(".card").addClass("csharp");
   } else {
-    $("#result-output").append("<img src='js.jpg'>");
+    $("#results-output").append("<img src='img/js.png'>");
     $("body").addClass("js");
     $(".jumbotron").addClass("js");
     $(".card").addClass("js");
