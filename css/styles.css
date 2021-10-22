@@ -18,7 +18,7 @@ button {
   padding: 1em;
 }
 
-#xresults {
+#results {
   display: none;
 }
 
@@ -27,7 +27,8 @@ button {
 }
 
 .ruby {
-  background-color: #cc0000;
+  background-color: #e72929;
+  color: white;
 }
 
 .csharp {
