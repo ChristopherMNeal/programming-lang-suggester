@@ -2,7 +2,7 @@
 
 #### By _**Christopher Neal**_
 
-#### _Which Programming Languages Should You Learn?_
+#### _Which Programming Languages Should You Learn First?_
 
 ## Technologies Used
 
