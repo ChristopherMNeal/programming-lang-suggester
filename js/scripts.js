@@ -12,15 +12,33 @@ function tallyResults(selection) {
   }
 }
 
+function coinToss(a, b) {
+  if (Math.random() > 0.5) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
   function winner(a, b, c) {
     if (a > b && a > c) {
       return "Ruby";
     } else if (b > a && b > c) {
       return "C#"
-    } else {
+    } else if (c > b && c > a) {
       return "JavaScript"
+    } else if (a === b) {
+      return coinToss("Ruby", "C#");
+    } else if (a === c) {
+      return coinToss("Ruby", "JavaScript");
+    } else {
+      return coinToss("C#", "Javascript");
     }
   }
+
+function getPercent(result) {
+  return (result / 6) * 100;
+}
 
 function setClass(winnerLang) {
   $("body, .jumbotron, .card").removeClass("ruby csharp js");
@@ -50,45 +68,21 @@ $(document).ready(function() {
     tallyResults($("input:radio[name=app1]:checked").val());
     tallyResults($("input:radio[name=app2]:checked").val());
     tallyResults($("input:radio[name=app3]:checked").val());
+    tallyResults($("input:radio[name=app4]:checked").val());
 
     $("#name-output").text(name);
     const lang = winner(ruby, csharp, js);
     $("#lang-output").text(lang);
     setClass(lang);
-    $("#results").show();
+    $("#results").delay(100).slideDown(600);
     $("#quiz").trigger("reset");
+
+    $("#rubypercent").text(getPercent(ruby).toFixed(2));
+    $("#csharppercent").text(getPercent(csharp).toFixed(2));
+    $("#jspercent").text(getPercent(js).toFixed(2));
     
     ruby = 0;
     csharp = 0;
     js = 0;
-    //delay(400).slideDown(1200);
-
-    //Add % of each function?
-    // function percentScore(character) {
-    //   return character / 4;
-    
   });
 });
-
-
-
-
-
-/* add function to determine tiebreaker by coin toss?
-
-change body class function
-function setClass(winnerLang) {
-  $("body").removeClass();
-  if (winnerLang === ruby) {
-    $("#result-output").append("<img src='ruby.jpeg'>");
-    $("body").addClass("ruby");
-  } else if (winnerLang === csharp) {
-    $("#result-output").append("<img src='csharp.jpeg'>");
-    $("body").addClass("csharp");
-  } else {
-    $("#result-output").append("<img src='js.jpg'>");
-    $("body").addClass("js");
-  }
-}
-
-} */
