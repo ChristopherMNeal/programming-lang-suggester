@@ -13,12 +13,17 @@ button {
   margin-left: 15px;
 }
 
-.blurb {
+.subheading {
   font-style: italic;
   padding: 1em;
 }
 
-#results {
+.heading {
+  padding: 1em;
+
+}
+
+#results, .hidden-pic {
   display: none;
 }
 
@@ -29,16 +34,19 @@ button {
 .ruby {
   background-color: #e72929;
   color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .csharp {
   background-color: #4A2882;
   color: #B0F9D8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .js {
   background-color: #f0DB4F;
-  color: #323330
+  color: #323330;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 img {
@@ -46,4 +54,14 @@ img {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 {
+  padding-top: 1.3%;
+  padding-bottom: 1%;
+}
+
+.cool { 
+  font-style: italic;
+  font-weight: bold;
 }

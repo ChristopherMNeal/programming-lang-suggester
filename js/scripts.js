@@ -24,23 +24,18 @@ function tallyResults(selection) {
 
 function setClass(winnerLang) {
   $("body, .jumbotron, .card").removeClass("ruby csharp js");
-  //$(".jumbotron").removeClass("ruby csharp js");
-  //$(".card").removeClass("ruby csharp js");
   if (winnerLang === "Ruby") {
-    $("#results-output").append("<img src='img/ruby.jpeg'>");
-    $("body").addClass("ruby");
-    $(".jumbotron").addClass("ruby");
-    $(".card").addClass("ruby");
+    $("#resultruby").show();
+    $("#resultjs, #resultcsharp").hide();
+    $("body, .jumbotron, .card").addClass("ruby");
   } else if (winnerLang === "C#") {
-    $("#results-output").append("<img src='img/csharp.jpeg'>");
-    $("body").addClass("csharp");
-    $(".jumbotron").addClass("csharp");
-    $(".card").addClass("csharp");
+    $("#resultcsharp").show();
+    $("#resultjs, #resultruby").hide();
+    $("body, .jumbotron, .card").addClass("csharp");
   } else {
-    $("#results-output").append("<img src='img/js.png'>");
-    $("body").addClass("js");
-    $(".jumbotron").addClass("js");
-    $(".card").addClass("js");
+    $("#resultjs").show();
+    $("#resultruby, #resultcsharp").hide();
+    $("body, .jumbotron, .card").addClass("js");
   }
 }
 
@@ -61,6 +56,7 @@ $(document).ready(function() {
     $("#lang-output").text(lang);
     setClass(lang);
     $("#results").show();
+    $("#quiz").trigger("reset");
     
     ruby = 0;
     csharp = 0;
@@ -68,7 +64,8 @@ $(document).ready(function() {
     //delay(400).slideDown(1200);
 
     //Add % of each function?
-
+    // function percentScore(character) {
+    //   return character / 4;
     
   });
 });

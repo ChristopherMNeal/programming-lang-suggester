@@ -9,15 +9,15 @@
 </head>
 <body>
 <div class="container">
-  <div class="jumbotron">
+  <div class="card heading">
     <h1>Which Programming Languages Should You Learn First?</h1>
     <h2>It's a tough decision we all  make. This quiz will help decide!</h2>
   </div>
-  <p class="card blurb">Choosing the right language to start with is important because it should be something you're intesrested in and enjoy!  However, there are similarities among all languages. Furthermore, you'll most likely switch between languages and platforms at your job, so don't overthink it! </p>
+  <p class="card subheading">Choosing the right language to start with is important because it should be something you're intesrested in and enjoy!  However, there are similarities among all languages. Furthermore, you'll most likely switch between languages and platforms at your job, so don't overthink it! </p>
   <form id="quiz" class="radio">
     <h3>First, tell me a little about <span class="cool">YOURSELF</span>!</h2>
     <div class="form-group" id="name-form">
-      <label for="name">What's your <span class="cool">NAME</span>?</label>
+      <label for="name"><h4>What's your <span class="cool">NAME</span>?</h4></label>
       <input id="name" class="form-control" type="text" value="Your Name">
     </div>
     <div class="row">
@@ -75,7 +75,7 @@
         </label>
       </div>
     </div>
-    <h3><br>Now, tell me a little about what you are interested in <span class="cool">MAKING</span>.</h2>
+    <h3>Now, tell me a little about what you are interested in <span class="cool">MAKING</span>.</h2>
     <div class="row">
       <div class="col-4">
         <h4>Which of the following would you be <span class="cool">INTERESTED</span> in?</h3>
@@ -134,10 +134,12 @@
     </div>      
   </form>
   <div id="results">
-    <p>Congrats, <span id="name-output"></span>! You should learn <span id="lang-output"></span>!!</p>
-    <div id="results-output"></div>
+    <h3>Congrats, <span id="name-output"></span>! You should learn <span id="lang-output"></span>!!</h3>
+    <div class="hidden-pic" id="resultruby"><img src="img/ruby.jpeg"></div>
+    <div class="hidden-pic" id="resultcsharp"><img src="img/csharp.jpeg"></div>
+    <div class="hidden-pic" id="resultjs"><img src="img/js.png"></div>
     <div class="row">
-      <h3><br>If you're interested, here's a longer list of applications made with each language:</h3>
+      <h3>If you're interested, here's a longer list of applications made with each language:</h3>
       <div class="col-4">
         <h4>C#</h4>
         <ul>
