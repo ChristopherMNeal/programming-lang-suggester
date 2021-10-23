@@ -23,6 +23,8 @@ _This page demonstrates a knowledge by the author of technologies used._
 `$ git clone https://github.com/ChristopherMNeal/programming-lang-suggester`
 * _Open index.html in your preferred browser_
 
+* _Or you can click [here](https://christophermneal.github.io/programming-lang-suggester/) to visit the page on gh-pages._
+
 ## Known Bugs
 
 _None_
