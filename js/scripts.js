@@ -40,6 +40,16 @@ function getPercent(result) {
   return ((result / 7) * 100).toFixed(2);
 }
 
+function noInput(input) {
+  if (!input) {
+    $("#no-input-message").show();
+    returnToPreviousPage();
+    return false;
+  } else {
+    return input;
+  }
+}
+
 function setClass(winnerLang) {
   $("body, .jumbotron, .card").removeClass("ruby csharp js");
   if (winnerLang === "Ruby") {
@@ -60,15 +70,16 @@ function setClass(winnerLang) {
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
+    $("#no-input-message").hide();
     
-    const name = $("#name").val();
-    tallyResults($("input:radio[name=hobby]:checked").val());
-    tallyResults($("input:radio[name=tv]:checked").val());
-    tallyResults($("input:radio[name=exercise]:checked").val());
-    tallyResults($("input:radio[name=app1]:checked").val());
-    tallyResults($("input:radio[name=app2]:checked").val());
-    tallyResults($("input:radio[name=app3]:checked").val());
-    tallyResults($("input:radio[name=app4]:checked").val());
+    const name = noInput($("#name").val());
+    tallyResults(noInput($("input:radio[name=hobby]:checked").val()));
+    tallyResults(noInput($("input:radio[name=tv]:checked").val()));
+    tallyResults(noInput($("input:radio[name=exercise]:checked").val()));
+    tallyResults(noInput($("input:radio[name=app1]:checked").val()));
+    tallyResults(noInput($("input:radio[name=app2]:checked").val()));
+    tallyResults(noInput($("input:radio[name=app3]:checked").val()));
+    tallyResults(noInput($("input:radio[name=app4]:checked").val()));
 
     $("#name-output").text(name);
     const lang = winner(ruby, csharp, js);

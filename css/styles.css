@@ -64,3 +64,16 @@ h3 {
   color: #323330;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+#no-input-message {
+  color: red;
+  font-style: italic;
+  font-size: 2em;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 3px 9px 3px 9px;
+  background-color: #ffdada;
+  display: none;
+}
