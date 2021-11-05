@@ -8,210 +8,167 @@
   <title>Programming Language Suggester</title>
 </head>
 <body>
-<div class="container">
-  <div class="card heading">
-    <h1>Which Programming Languages Should You Learn First?</h1>
-    <h2>It's a tough decision we all  make. This quiz will help decide!</h2>
-  </div>
-  <p class="card subheading">This quiz will help you choose from Ruby, C#, and Javascript. These are great languages to start with, but it's not a complete list.<br>When starting to learn, it's important to a language you're intesrested in and will enjoy!  However, there are similarities among all languages.<br>Furthermore, when working in the field, you'll most likely switch between languages and platforms, so don't overthink it! </p>
-  <form id="quiz" class="radio">
-    <h3>First, tell me a little about <span class="cool">YOURSELF!</span></h3>
-    <div class="form-group" id="name-form">
-      <label for="name"><h4>What's your <span class="cool">NAME?</span></h4></label>
-      <input id="name" class="form-control" type="text" value="Your Name">
+  <div class="container">
+    <div class="card heading">
+      <h1>Which Programming Languages Should You Learn First?</h1>
+      <h2>It's a tough decision we all  make. This quiz will help decide!</h2>
     </div>
-    <div class="row">
-      <div class="col-4">
-        <h4>What's your favorite <span class="cool">HOBBY?</span></h4>
+    <p class="card subheading">This quiz will help you choose from Ruby, C#, and Javascript. These are great languages to start with, but it's not a complete list.<br>When starting to learn, it's important to a language you're intesrested in and will enjoy!  However, there are similarities among all languages.<br>Furthermore, when working in the field, you'll most likely switch between languages and platforms, so don't overthink it! </p>
+    <form id="quiz" class="radio">
+      <h3>First, tell me a little about <span class="cool">YOURSELF!</span></h3>
+      <div class="form-group" id="name-form">
+        <label for="name"><h4>What's your <span class="cool">NAME?</span></h4></label>
+        <input id="name" class="form-control" type="text" value="Your Name">
       </div>
-      <div class="col-4">
-        <h4>What's your favorite <span class="cool">TV SHOW?</span></h4>
+      <div class="row">
+        <div class="col-4">
+          <h4>What's your favorite <span class="cool">HOBBY?</span></h4>
+        </div>
+        <div class="col-4">
+          <h4>What's your favorite <span class="cool">TV SHOW?</span></h4>
+        </div>
+        <div class="col-4">
+          <h4>What's your favorite <span class="cool">EXERCISE?</span></h4>
+        </div>
       </div>
-      <div class="col-4">
-        <h4>What's your favorite <span class="cool">EXERCISE?</span></h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <label for="q1r1">
+      <div class="row">
+        <div class="col-4">
+          <label for="q1r1">Cooking Extravagent Meals from Scratch</label>
           <input id="q1r1" type="radio" name="hobby" value="csharp">
-          Cooking Extravagent Meals from Scratch
-        </label>
-        <label for="q1r2">
+          <label for="q1r2">Listening to Music on your Vintage HiFi Stereo</label>
           <input type="radio" name="hobby" value="js">
-          Listening to Music on your Vintage HiFi Stereo
-        </label>
-        <label for="q1r3">
+          <label for="q1r3">Playing Fetch in a Beautiful Grassy Field with your Purebread Golden Retriever, Abigale</label>
           <input type="radio" name="hobby" value="ruby">
-          Playing Fetch in a Beautiful Grassy Field with your Purebread Golden Retriever, Abigale
-        </label>
-      </div>
-      <div class="col-4">
-        <label for="q2r1">
+        </div>
+        <div class="col-4">
+          <label for="q2r1">The Simpsons</label>
           <input id="q1r1" type="radio" name="tv" value="js">
-          The Simpsons
-        </label>
-        <label for="q2r2">
+          <label for="q2r2">The I.T. Crowd</label>
           <input type="radio" name="tv" value="csharp">
-          The I.T. Crowd
-        </label>
-        <label for="q2r3">
+          <label for="q2r3">The Office</label>
           <input type="radio" name="tv" value="ruby">
-          The Office
-        </label>
-      </div>
-      <div class="col-4">
-        <label for="q3r1">
+        </div>
+        <div class="col-4">
+          <label for="q3r1">Peloton Bicycling</label>
           <input id="q1r1" type="radio" name="exercise" value="ruby">
-          Peloton Bicycling
-        </label>
-        <label for="q3r2">
+          <label for="q3r2">Kettlebell Workouts</label>
           <input type="radio" name="exercise" value="csharp">
-          Kettlebell Workouts
-        </label>
-        <label for="q3r3">
-          <input type="radio" name="exercise" value="js">
-          Running
-        </label>
+          <label for="q3r3">Running</label>
+          <input type="radio" name="exercise" value="js">  
+        </div>
       </div>
-    </div>
-    <h3>Now, tell me a little about what you are interested in <span class="cool">MAKING</span>.</h3>
-    <div class="row">
-      <div class="col-3">
-        <h4>Which of the following would you be <span class="cool">INTERESTED</span> in?</h4>
+      <h3>Now, tell me a little about what you are interested in <span class="cool">MAKING</span>.</h3>
+      <div class="row">
+        <div class="col-3">
+          <h4>Which of the following would you be <span class="cool">INTERESTED</span> in?</h4>
+        </div>
+        <div class="col-3">
+          <h4>How about <span class="cool">THESE</span> applications?</h4>
+        </div>
+        <div class="col-3">
+          <h4>And which of <span class="cool">THESE</span> sparks your interest?</h4>
+        </div>
+        <div class="col-3">
+          <h4>And, finally, what do you think of <span class="cool">THESE?</span></h4>
+        </div>
       </div>
-      <div class="col-3">
-        <h4>How about <span class="cool">THESE</span> applications?</h4>
-      </div>
-      <div class="col-3">
-        <h4>And which of <span class="cool">THESE</span> sparks your interest?</h4>
-      </div>
-      <div class="col-3">
-        <h4>And, finally, what do you think of <span class="cool">THESE?</span></h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-3">
-        <label for="q4r1">
+      <div class="row">
+        <div class="col-3">
+          <label for="q4r1">Candy Crush</label>
           <input id="q1r1" type="radio" name="app1" value="js">
-          Candy Crush
-        </label>
-        <label for="q4r2">
+          <label for="q4r2">Microsoft Visual Studio</label>
           <input type="radio" name="app1" value="csharp">
-          Microsoft Visual Studio
-        </label>
-        <label for="q4r3">
+          <label for="q4r3">Github</label>
           <input type="radio" name="app1" value="ruby">
-          Github
-        </label>
-      </div>
-      <div class="col-3">
-        <label for="q5r1">
+        </div>
+        <div class="col-3">
+          <label for="q5r1">Airbnb</label>
           <input id="q1r1" type="radio" name="app2" value="ruby">
-          Airbnb
-        </label>
-        <label for="q5r2">
+          <label for="q5r2">Rimworld (on Unity Game Engine)</label>
           <input type="radio" name="app2" value="csharp">
-          Rimworld (on Unity Game Engine)
-        </label>
-        <label for="q5r3">
+          <label for="q5r3">Netflix</label>
           <input type="radio" name="app2" value="js">
-          Netflix
-        </label>
-      </div>
-      <div class="col-3">
-        <label for="q6r1">
+        </div>
+        <div class="col-3">
+          <label for="q6r1">FlashDevelop</label>
           <input id="q1r1" type="radio" name="app3" value="js">
-          FlashDevelop
-        </label>
-        <label for="q6r2">
+          <label for="q6r2">SoundCloud</label>
           <input type="radio" name="app3" value="ruby">
-          SoundCloud
-        </label>
-        <label for="q6r3">
+          <label for="q6r3">LinkedIn</label>
           <input type="radio" name="app3" value="csharp">
-          LinkedIn
-        </label>
-      </div>
-      <div class="col-3">
-        <label for="q7r1">
+        </div>
+        <div class="col-3">
+          <label for="q7r1">Bloomberg</label>
           <input id="q1r1" type="radio" name="app4" value="ruby">
-          Bloomberg
-          
-        </label>
-        <label for="q7r2">
+          <label for="q7r2">Windows Installer XML</label>
           <input type="radio" name="app4" value="csharp">
-          Windows Installer XML
-        </label>
-        <label for="q7r3">
+          <label for="q7r3">Online Quizzes</label>
           <input type="radio" name="app4" value="js">
-          Online Quizzes
-        </label>
+        </div>
+        <button type="submit" class="btn btn-secondary">Click Here to See Your Results!</button>
+      </div>      
+    </form>
+    <div id="results">
+      <h3>Congrats, <span id="name-output"></span>! You should learn <span id="lang-output"></span>!!</h3>
+      <div class="hidden-pic" id="resultruby">
+        <img src="img/ruby.jpeg">
       </div>
-      <button type="submit" class="btn btn-secondary">Click Here to See Your Results!</button>
-    </div>      
-  </form>
-  <div id="results">
-    <h3>Congrats, <span id="name-output"></span>! You should learn <span id="lang-output"></span>!!</h3>
-    <div class="hidden-pic" id="resultruby">
-      <img src="img/ruby.jpeg">
-    </div>
-    <div class="hidden-pic" id="resultcsharp">
-      <img src="img/csharp.jpeg">
-    </div>
-    <div class="hidden-pic" id="resultjs">
-      <img src="img/js.png">
-    </div>
-    <h4>Your results were:</h4>
-    <h5>(Ties broken by cointoss.)</h5>
-    <ul>
-      <li><span id="rubypercent"></span>% Ruby</li>
-      <li><span id="csharppercent"></span>% C#</li>
-      <li><span id="jspercent"></span>% Javascript</li>
-    </ul>
-    <div class="row">
-      <h3>If you're interested, here's a longer list of applications made with each language:</h3>
-      <div class="col-4">
-        <h4>C#</h4>
-        <ul>
-          <li>Windows Installer XML</li>
-          <li>Microsoft Visual Studio</li>
-          <li>Paint.NET</li>
-          <li>Rimworld (on Unity Game Engine)</li>
-          <li>KeePass</li>
-          <li>FlashDevelop</li>
-          <li>Banshee</li>
-          <li>NMath</li>
-        </ul>
+      <div class="hidden-pic" id="resultcsharp">
+        <img src="img/csharp.jpeg">
       </div>
-      <div class="col-4">
-        <h4>Ruby</h4>
-        <ul>
-          <li>AirBnB</li>
-          <li>Twitch</li>
-          <li>GitHub</li>
-          <li>SoundCloud</li>
-          <li>Bloomberg</li>
-          <li>Kickstarter</li>
-          <li>Shopify</li>
-          <li>Indiegogo</li>
-        </ul>
+      <div class="hidden-pic" id="resultjs">
+        <img src="img/js.png">
       </div>
-      <div class="col-4">
-        <h4>Javascript</h4>
-        <ul>
-          <li>Netflix</li>
-          <li>Candy Crush</li>
-          <li>Facebook</li>
-          <li>Uber</li>
-          <li>LinkedIn</li>
-          <li>Angry Birds</li>
-          <li>Bejeweled</li>
-          <li>This Quiz!</li>
-        </ul>
+      <h4>Your results were:</h4>
+      <h5>(Ties broken by cointoss.)</h5>
+      <ul>
+        <li><span id="rubypercent"></span>% Ruby</li>
+        <li><span id="csharppercent"></span>% C#</li>
+        <li><span id="jspercent"></span>% Javascript</li>
+      </ul>
+      <div class="row">
+        <h3>If you're interested, here's a longer list of applications made with each language:</h3>
+        <div class="col-4">
+          <h4>C#</h4>
+          <ul>
+            <li>Windows Installer XML</li>
+            <li>Microsoft Visual Studio</li>
+            <li>Paint.NET</li>
+            <li>Rimworld (on Unity Game Engine)</li>
+            <li>KeePass</li>
+            <li>FlashDevelop</li>
+            <li>Banshee</li>
+            <li>NMath</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>Ruby</h4>
+          <ul>
+            <li>AirBnB</li>
+            <li>Twitch</li>
+            <li>GitHub</li>
+            <li>SoundCloud</li>
+            <li>Bloomberg</li>
+            <li>Kickstarter</li>
+            <li>Shopify</li>
+            <li>Indiegogo</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h4>Javascript</h4>
+          <ul>
+            <li>Netflix</li>
+            <li>Candy Crush</li>
+            <li>Facebook</li>
+            <li>Uber</li>
+            <li>LinkedIn</li>
+            <li>Angry Birds</li>
+            <li>Bejeweled</li>
+            <li>This Quiz!</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
