@@ -1,8 +1,8 @@
 # _Programming Language Suggester_
 
-#### By _**Christopher Neal**_
+#### Created By _**Christopher Neal**_
 
-#### _Which Programming Languages Should You Learn First?_
+#### _A quiz application to suggest a programming language._
 
 ## Technologies Used
 
@@ -14,12 +14,11 @@
 
 ## Description
 
-_Users will be given a suggestion of which programming language is best suited to them to learn. They will answer a series of questions and be given an answer._ 
-_This page demonstrates a knowledge by the author of technologies used._
+_This project was created for Epicodus bootcamp as a code review to show proficiency in HTML, jQuery, and Javascript if statements. Users will be given a suggestion of which programming language is best suited to them to learn. They will answer a series of questions and be given an answer._
 
 ## Setup/Installation Requirements
 
-* _Clone the Programming Language Suggester GitHub repository from https://github.com/ChristopherMNeal/programming-lang-suggester by running the following code in your terminal_
+* _Clone the Programming Language Suggester GitHub [repository](https://github.com/ChristopherMNeal/programming-lang-suggester) by running the following code in your terminal_
 `$ git clone https://github.com/ChristopherMNeal/programming-lang-suggester`
 * _Open index.html in your preferred browser_
 
@@ -39,5 +38,7 @@ _None_
 ## License
 
 _[MIT](https://opensource.org/licenses/MIT)_
-
 Copyright (c) _22 October 2021_ _Christopher Neal_
+
+## Support and Contact Details
+* _[christopher.m.neal@gmail.com](mailto:christopher.m.neal@gmail.com)_
